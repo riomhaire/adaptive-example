@@ -46,7 +46,7 @@ The 'basic' non-adaptive endpoint is covered by this code snapshot:
 
 Going though this we define based off of the CPU load where the service instance is running the following three scenarios:
 
-1. **NORMAL** When CPU load is 50% - and we will do all the logging and make all the 'informational' down-stream calls.
+1. **NORMAL** When CPU load is 50% or less - and we will do all the logging and make all the 'informational' down-stream calls.
 1. **WARNING** When CPU load is between 50% and 80% - and we will drop most of the logging but still keep the 'informational' down-stream calls.
 1. **DANGEROUS** When CPU load is 80% or more - in this scenario we will stop logging as well as dropping the  'informational' down-stream calls.
 
